@@ -1,11 +1,12 @@
 #home{
-    padding-top: 5px;
+    padding-top: 3px;
+    padding-left: -3px;
     color:black;
     text-shadow: 2px 2px orangered;
     text-align: center;
 }
 .nav-item1{
-    padding-left: 600px;
+    padding-left: 400px;
     
   }
   

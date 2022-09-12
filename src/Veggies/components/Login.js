@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
 import './Login.css'
 import {Link} from 'react-router-dom';
 import RegisterServices from '../services/RegisterServices';
@@ -116,31 +116,31 @@ checkRole=(e)=>{
 render(){
     return (
         <div>
-            <nav class="navbar navbar-light" style={{backgroundColor:"red"}}>
-                <span class="navbar-brand mb-0 h1"><h4>Hotel Ruchi Management</h4></span>
+            <nav class="navbar navbar-light" style={{backgroundColor:"grey"}}>
+                <span class="navbar-brand mb-0 h1"style={{color:"lightgreen"}}><h4>VeGGies Store</h4></span>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item1 active">
-                        <Link class="nav-link" to="/" style={{color:"black"}}><h6>Home</h6></Link>
+                        <Link class="nav-link" to="/" style={{color:"lightgreen"}}><h6>Home</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item2 active">
-                        <Link class="nav-link" to="/services" style={{color:"black"}}><h6>Services</h6></Link>
+                        <Link class="nav-link" to="/services" style={{color:"lightgreen"}}><h6>AboutUs</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item3 active">
-                        <Link class="nav-link" to="/register" style={{color:"black"}}><h6>Register</h6></Link>
+                        <Link class="nav-link" to="/register" style={{color:"lightgreen"}}><h6>Register</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item4 active">
-                        <Link class="nav-link" to="/login" style={{color:"black"}}><h6>Login</h6></Link>
+                        <Link class="nav-link" to="/login" style={{color:"lightgreen"}}><h6>Login</h6></Link>
                     </li>
                 </ul>
             </nav>
-            <div style={{backgroundImage:"url(https://cdn.pixabay.com/photo/2016/04/15/11/46/hotel-1330846_960_720.jpg)", height:700,backgroundSize:1500}}><br/>
-            <h2 style={{textAlign:"center",color:"black"}}>Login Here</h2>
+            <div style={{backgroundImage:"url(https://thumbs.dreamstime.com/b/shabby-wood-texture-vintage-wooden-fence-desk-surface-natural-color-weathered-timber-background-brown-old-wood-planks-shabby-wood-158067569.jpg)", height:700,backgroundSize:1500}}><br/>
+            <h2 style={{textAlign:"center",color:"lightgreen"}}>Login Here&#x1F447;</h2>
             
             
             <form>
@@ -170,8 +170,9 @@ render(){
                 </select>
             </div> */}
             
-            <button type="submit" className="btn btn-success" onClick={this.checkRole}>Login</button><br/>
-            <Link to="/register">If  you are new user please register</Link>
+            <button type="submit" className="btn btn-success" onClick={this.checkRole}>Login</button><br/><br></br>
+            <h6>New user... register here&#x1F447;!!<br></br></h6>
+            <Link to="/register">CLICK HERE</Link>
              </form>
         </div>
         </div>

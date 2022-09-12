@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import RegisterServices from '../services/RegisterServices'
 
 
+
 export default class Register extends Component {
   constructor(props){
     super(props)
@@ -16,7 +17,7 @@ export default class Register extends Component {
       phoneNumber:'',
       address:'',
       gender:'',
-     // role:''
+     
     }
   }
     
@@ -48,7 +49,7 @@ switch(name){
     case "password":errors.password =value.length < 8 ? "password should have minimum 8 characters" : "";  
     break;
 
-    case "phoneNumber":errors.phoneNumber=value.length !=10 ? "Invalid ,Phonenumber should have 10 digits" : "";  
+    case "phoneNumber":errors.phoneNumber=value.length !==10 ? "Invalid ,Phonenumber should have 10 digits" : "";  
     break;
     
     default: break;
@@ -94,33 +95,32 @@ this.setState({errors,[name]:value});
     return (
         <div>
 
-<nav class="navbar navbar-light" style={{backgroundColor:"red"}}>
-                <span class="navbar-brand mb-0 h1"><h4>Hotel Ruchi Management</h4></span>
+<nav class="navbar navbar-light" style={{backgroundColor:"grey"}}>
+                <span class="navbar-brand mb-0 h1"style={{color:"lightgreen"}}><h4>VeGGies Store</h4></span>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item1 active">
-                        <Link class="nav-link" to="/" style={{color:"black"}}><h6>Home</h6></Link>
+                        <Link class="nav-link" to="/" style={{color:"lightgreen"}}><h6>Home</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item2 active">
-                        <Link class="nav-link" to="/services" style={{color:"black"}}><h6>Services</h6></Link>
+                        <Link class="nav-link" to="/services" style={{color:"lightgreen"}}><h6>AboutUs</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item3 active">
-                        <Link class="nav-link" to="/register" style={{color:"black"}}><h6>Register</h6></Link>
+                        <Link class="nav-link" to="/register" style={{color:"lightgreen"}}><h6>Register</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item4 active">
-                        <Link class="nav-link" to="/login" style={{color:"black"}}><h6>Login</h6></Link>
+                        <Link class="nav-link" to="/login" style={{color:"lightgreen"}}><h6>Login</h6></Link>
                     </li>
                 </ul>
             </nav>
 
-            <div style={{backgroundImage:"url(https://ak.picdn.net/shutterstock/videos/1098091/thumb/1.jpg)",height:800,backgroundSize:1400}}>
-          
-            <h2 style={{textAlign:"center",color:"black"}}>Register Here</h2>
+            <div style={{backgroundImage:"url(https://thumbs.dreamstime.com/b/shabby-wood-texture-vintage-wooden-fence-desk-surface-natural-color-weathered-timber-background-brown-old-wood-planks-shabby-wood-158067569.jpg)",height:920,backgroundSize:1450}}>
+            <h2 style={{textAlign:"center",color:"lightgreen"}}><br></br> Register Here&#x1F447;!!</h2>
             
             <form>
             <div className="form-group">

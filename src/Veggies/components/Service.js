@@ -6,42 +6,43 @@ import {Link} from 'react-router-dom'
 export default function Services() {
     return (
         <div>
-<nav class="navbar navbar-light" style={{backgroundColor:"red"}}>
-                <span class="navbar-brand mb-0 h1"><h4>Hotel Ruchi Management</h4></span>
+<nav class="navbar navbar-light" style={{backgroundColor:"grey"}}>
+                <span class="navbar-brand mb-0 h1"style={{color:"lightyellow"}}><h4>VeGGies Store</h4></span>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item1 active">
-                        <Link class="nav-link" to="/" style={{color:"black"}}><h6>Home</h6></Link>
+                        <Link class="nav-link" to="/" style={{color:"lightyellow"}}><h6>Home</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item2 active">
-                        <Link class="nav-link" to="/services" style={{color:"black"}}><h6>Services</h6></Link>
+                        <Link class="nav-link" to="/services" style={{color:"lightyellow"}}><h6>AboutUs</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item3 active">
-                        <Link class="nav-link" to="/register" style={{color:"black"}}><h6>Register</h6></Link>
+                        <Link class="nav-link" to="/register" style={{color:"lightyellow"}}><h6>Register</h6></Link>
                     </li>
                 </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item4 active">
-                        <Link class="nav-link" to="/login" style={{color:"black"}}><h6>Login</h6></Link>
+                        <Link class="nav-link" to="/login" style={{color:"lightyellow"}}><h6>Login</h6></Link>
                     </li>
                 </ul>
             </nav>
-        <div style={{backgroundImage:"url(https://i.pinimg.com/originals/bb/57/8d/bb578d8aab4e8b634a5b6f81e370fbb8.jpg)",height:"800px",backgroundSize:1400}}>
+        <div style={{backgroundImage:"url(https://media.istockphoto.com/photos/frame-of-fresh-organic-vegetables-with-spices-and-oil-picture-id1191634648?k=20&m=1191634648&s=612x612&w=0&h=Rx4OI2QbQQtRWkEpgGuGexWbWWrr3k0o7tHHFGMZ4T0=)",height:"650px",backgroundSize:1400}}>
            
-            <h2 id ="home" style={{color:"black"}}>Our Services</h2><br/><br/>
+           
+            <br></br><h2 style={{textAlign:"center",color:"black"}}> About Us</h2><br></br><br></br>
 
 
    
 
 <div className="card-deck" >
 
-  <div className="card text-white bg-primary mb-3">
-    <div className="card-body">
-      <h5 className="card-title"> <i className="fa fa-wifi" aria-hidden="true"> </i> </h5>
-      <p className="card-text">Free wifi will be provided for the hotel users and it is unlimited, so user can watching what ever they require using this free wifi.</p>
+  <div className="card text-white bg-warning mb-3">
+    <div className="card-body"style={{color:"black"}}>
+      <h5 className="card-title"> <i className="fa fa-handshake" aria-hidden="true"> &nbsp;<u>Customer </u></i> </h5>
+      <p className="card-text">Customer service representatives listen to customer concerns, answer customer questions and provide information about the company's products and services.</p>
       
     </div>
   </div>
@@ -49,26 +50,30 @@ export default function Services() {
   <div className=" card text-white bg-warning mb-3">
     
     <div className="card-body"  style={{color:"black"}}>
-      <h5 className="card-title"> <i className="fa fa-coffee" aria-hidden="true"> </i> </h5>
-      <p className="card-text">We provide tea and coffee free for the hotel users, you can drink as much as you need, its completely free.</p>
+      <h5 className="card-title"> <i className="fa fa-cart-arrow-down" aria-hidden="true">&nbsp;<u>Product & </u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Purchase</u> </i> </h5>
+      <p className="card-text"> The marketing copy that explains what a product is and why it's worth purchasing. The purpose is to supply customers with benefits</p>
       
     </div>
   </div>
 
-  <div className="card text-white bg-danger mb-3">
+  <div className="card text-white bg-warning mb-3">
 
-    <div className="card-body">
-      <h5 className="card-title"> <i className="fa fa-ambulance" aria-hidden="true"></i></h5>
-      <p className="card-text">At the time of any medical emergency we provide ambulance services .</p>
+    <div className="card-body"style={{color:"black"}}>
+      <h5 className="card-title"> <i className="fa fa-truck" aria-hidden="true">&nbsp;&nbsp;<u>Delivery </u></i></h5>
+      <p className="card-text">Delivers high-quality products to our customers in a safe, courteous, and timely manner. Establishes and maintains outstanding relations with customers.</p>
       
     </div>
   </div>
   
 
-  <div className="card text-white bg-success mb-3">
-    <div className="card-body">
-      <h5 className="card-title"> <i className="fa fa-taxi" aria-hidden="true" ></i></h5>
-      <p className="card-text">We provide free taxi services for the users, so users no need to worry about private taxi and spend more on it.</p>
+  <div className="card text-white bg-warning mb-3">
+    <div className="card-body"style={{color:"black"}}>
+      <h5 className="card-title"> <i className="fa fa-phone" aria-hidden="true" >&nbsp;&nbsp;<u>Phone </u></i></h5>
+      <p className="card-text"><b>9876543210</b><br></br></p>
+      <h5 className="card-title"> <i className="fa fa-envelope" aria-hidden="true" >&nbsp;&nbsp;<u>E-Mail </u></i></h5>
+      <p className="card-text"><b>VeGGies-Store@yahoo.com</b><br></br></p>
+      <h5 className="card-title"> <i className="fa fa-address-book" aria-hidden="true" >&nbsp;&nbsp;<u>Address </u></i></h5>
+      <p className="card-text"><b>5/12,indra street,<br></br>DELHI-635263</b><br></br></p>
     </div>
   </div> 
 </div>
